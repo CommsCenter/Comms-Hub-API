@@ -1,6 +1,6 @@
 {
     "name": "commscenter/comms-hub-api",
-    "description": "PHP API for Comms Hub",
+    "description": "PHP API for Comms Hub - https://hub.comms.dev",
     "homepage": "https://github.com/commscenter/comms-hub-api",
     "license": "MIT",
     "authors": [
