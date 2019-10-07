@@ -1,0 +1,21 @@
+{
+    "name": "commscenter/comms-hub-api",
+    "description": "PHP API for Comms Hub",
+    "homepage": "https://github.com/commscenter/comms-hub-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bojan Rajh",
+            "email": "bojan@comms.dev"
+        }
+    ],
+    "require": {
+        "pckg-app/api": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Comms": "src\\"
+        }
+    }
+}
