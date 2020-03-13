@@ -1,6 +1,7 @@
 <?php namespace Comms\Hub;
 
 use Comms\Hub\Endpoint\ItemTemplate;
+use Comms\Hub\Endpoint\Share;
 use GuzzleHttp\RequestOptions;
 use Pckg\Api\Api as PckgApi;
 
@@ -36,9 +37,9 @@ class Api extends PckgApi
      *
      * @return ItemTemplate
      */
-    public function itemTemplate($data = [])
+    public function share($data = [])
     {
-        return new ItemTemplate($this, $data);
+        return new Share($this, $data);
     }
 
 }
