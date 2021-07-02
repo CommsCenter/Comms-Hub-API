@@ -2,6 +2,7 @@
 
 use Comms\Hub\Endpoint\ItemTemplate;
 use Comms\Hub\Endpoint\Share;
+use Comms\Hub\Endpoint\Store;
 use GuzzleHttp\RequestOptions;
 use Pckg\Api\Api as PckgApi;
 
@@ -29,6 +30,7 @@ class Api extends PckgApi
                 'X-Comms-Hub-Api-Key' => $this->apiKey,
             ],
             RequestOptions::TIMEOUT => 15,
+            RequestOptions::VERIFY => false,
         ];
     }
 
@@ -42,4 +44,12 @@ class Api extends PckgApi
         return new Share($this, $data);
     }
 
+    /**
+     * @param array $data
+     * @return Store
+     */
+    public function store($data = [])
+    {
+        return new Store($this, $data);
+    }
 }
